@@ -2,34 +2,45 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 
-  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mdb.min.css" />
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css"
-    crossorigin="anonymous">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    crossorigin="anonymous"> <!-- Bootstrap CSS -->
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@300&display=swap"
     rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="./img/Favi.png">
+
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-  </link>
-  <link rel="stylesheet" href="./CSS/style.css">
+  <script type="text/javascript" src="src/utils/helpers.js" defer></script>
 
   <title>My Resume Page</title>
-  <link rel="icon" type="image/x-icon" href="./img/Favi.png">
+
+  <style>
+    .carousel-control-prev-icon:after {
+      display: none;
+    }
+
+    .carousel-control-next-icon:after {
+      display: none;
+    }
+  </style>
 
 </head>
 
 <body>
+
   <div class="wrapper">
     <header class="mainHeader" id="home">
 
@@ -464,55 +475,52 @@
 
   <section class="contact">
     <div class="Formcontainer">
+
       <!--Contact Form Start-->
       <form action="#">
         <div class="contactCards">
+
           <div class="contactCard fname">
             <div class="form-challenge">
               <input type="text" name="userID" placeholder="Name" id="userID" required>
             </div>
           </div>
+
           <div class="contactCard femail">
             <div class="form-challenge">
-
-
               <input type="email" name="email" placeholder="Email Adress" id="email" required>
-
             </div>
           </div>
+
           <div class="contactCard fsubject">
             <div class="form-challenge">
-
-
               <input type="text" name="subject" placeholder="Subject" id="subject" required>
-
             </div>
           </div>
+
           <div class="contactCard fcomment">
-
             <div class="form-challenge">
-
-
-              <textarea id="comment" name="comment" placeholder="Write something" id="comment"
-                style="height:200px"></textarea>
-
+              <textarea id="comment" name="comment" placeholder="Write something" id="comment" style="height:200px">
+              </textarea>
             </div>
           </div>
 
           <div class="contactCard submit">
             <div>
-              <input type="submit" class="button" id="formbtn" value="SEND MESSAGE">
+              <input type="submit" class="button" id="formbtn" value="Contact Me">
             </div>
-
           </div>
+
         </div>
       </form>
       <!--Contact Form End-->
     </div>
+
     <br>
     <br>
     <br>
     <br>
+
   </section>
 
   <footer>
@@ -521,9 +529,62 @@
 
       <div class="contentbox logoB">
         <img src="./img/studioLogo.png" width="200px">
-        <p>Its not just a design! Its all about the small things that make it something GREAT!</p>
+        <p>
+          Its not just a design! Its all about the small things that make it something GREAT!
+        </p>
       </div>
+
       <div class="contentbox serviceB">
+        <div class="footerHeading">What Do You Need?</div>
+        <ul class="footerUL">
+          <li class="footerLI">A Graphic Designer</li>
+          <li class="footerLI">A Layout Artist</li>
+          <li class="footerLI">A Web Developer</li>
+        </ul>
+      </div>
+
+      <div class="contentbox contactB" id="contact">
+        <div class="footerHeading">Contact Info</div>
+        <ul class="footerUL">
+          <li class="footerLI">123 Street, Centurion, Pretoria</li>
+          <li class="footerLI">+27 82 123 4567</li>
+          <li class="footerLI">info@studio81.info</li>
+        </ul>
+      </div>
+
+      <div class="contentbox copyB">
+        <p class="pcopyright"> Studio 81 @ All Rights Reserved 2022</p>
+        <ul class="socialfooterUL">
+          <li class="socialfooterLI">
+            <a class="nav-link" href="https://www.facebook.com/studio81portfolio/">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="socialfooterLI">
+            <a class="nav-link" href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="socialfooterLI">
+            <a class="nav-link" href="https://www.linkedin.com/in/anton-marais-3b06a1128/">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- <div class="footerContainer">
+      <div class="footerScontain footerlogo">
+
+        <div class="logos"><img src="./img/studio logo.png" width="200px"></div>
+        <p>Proin dictum eget erat eu rutrum. Aenean maximus ipsum sed dignissim tempor. Aliquam quam mauris, varius non
+          elit vitae.</p>
+
+      </div>
+      <div class="footerScontain footerService">
+
         <div class="footerHeading">What Do You Need?</div>
 
         <ul class="footerUL">
@@ -532,9 +593,13 @@
           <li class="footerLI">A Web Developer</li>
         </ul>
 
+        <p>Im all of them you can contact me!</p>
 
       </div>
-      <div class="contentbox contactB" id="contact">
+
+
+      <div class="footerScontain footerContact">
+
         <div class="footerHeading">Contact Info</div>
 
         <ul class="footerUL">
@@ -543,153 +608,36 @@
           <li class="footerLI">info@studio81.info</li>
 
         </ul>
-      </div>
-
-      <div class="contentbox copyB">
-
-        <p class="pcopyright"> Studio 81 @ All Rights Reserved 2022</p>
-        <ul class="socialfooterUL">
-
-          <li class="socialfooterLI"><a class="nav-link" href="https://www.facebook.com/studio81portfolio/"><i
-                class="fa-brands fa-facebook-f"></i></a></li>
-          <li class="socialfooterLI"><a class="nav-link" href="https://www.instagram.com/"><i
-                class="fa-brands fa-instagram"></i></a></li>
-          <li class="socialfooterLI"><a class="nav-link" href="https://www.linkedin.com/in/anton-marais-3b06a1128/"><i
-                class="fa-brands fa-linkedin-in"></i></a></li>
-
-        </ul>
-
-
-
-      </div>
-
-
-
-    </div>
-
-
-
-    <!--
-    <div class="footerContainer">
-      <div class="footerScontain footerlogo">
-
-      <div class="logos"><img src="./img/studio logo.png" width="200px"></div>
-           <p>Proin dictum eget erat eu rutrum. Aenean maximus ipsum sed dignissim tempor. Aliquam quam mauris, varius non elit vitae.</p>
-
-      </div>
-      <div class="footerScontain footerService">
-
-        <div class="footerHeading">What Do You Need?</div>
-        
-        <ul class="footerUL">
-            <li class="footerLI">A Graphic Designer</li>
-            <li class="footerLI">A Layout Artist</li>
-            <li class="footerLI">A Web Developer</li>
-        </ul>
-    
-        <p>Im all of them you can contact me!</p>
-
-      </div>
-      
-      
-      <div class="footerScontain footerContact">
-
-      <div class="footerHeading">Contact Info</div>
-      
-      <ul class="footerUL">
-        <li class="footerLI">123 Street, Centurion, Pretoria</li>
-        <li class="footerLI">+27 82 123 4567</li>
-        <li class="footerLI">info@studio81.info</li>
-    
-      </ul>
 
       </div>
 
       <div class="footerScontain footercopyRight">
         <p>Studio 81 @ All Rights Reserved 2022</p>
       </div>
-</div>   
-  </div>
--->
-
+    </div> -->
 
   </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 
-  <script>
-    var TxtRotate = function (el, toRotate, period) {
-      this.toRotate = toRotate;
-      this.el = el;
-      this.loopNum = 0;
-      this.period = parseInt(period, 10) || 2000;
-      this.txt = '';
-      this.tick();
-      this.isDeleting = false;
-    };
-
-    TxtRotate.prototype.tick = function () {
-      var i = this.loopNum % this.toRotate.length;
-      var fullTxt = this.toRotate[i];
-
-      if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-      } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-      }
-
-      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-      var that = this;
-      var delta = 300 - Math.random() * 100;
-
-      if (this.isDeleting) { delta /= 2; }
-
-      if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-      } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-      }
-
-      setTimeout(function () {
-        that.tick();
-      }, delta);
-    };
-
-    window.onload = function () {
-      var elements = document.getElementsByClassName('txt-rotate');
-      for (var i = 0; i < elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-rotate');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtRotate(elements[i], JSON.parse(toRotate), period);
-        }
-      }
-      // INJECT CSS
-      var css = document.createElement("style");
-      css.type = "text/css";
-      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-      document.body.appendChild(css);
-    };
-
-  </script>
 </body>
 
 </html>
