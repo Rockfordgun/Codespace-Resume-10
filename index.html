@@ -1,416 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 
-  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mdb.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css"
+    crossorigin="anonymous"> <!-- Bootstrap CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="./img/Favi.png">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
-    <link rel="stylesheet" href="./CSS/style.css">
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="src/utils/helpers.js" defer></script>
 
-    <title>My Resume Page</title>
-    <link rel="icon" type="image/x-icon" href="./img/Favi.png">
+  <title>My Resume Page</title>
+
+  <style>
+    .carousel-control-prev-icon:after {
+      display: none;
+    }
+
+    .carousel-control-next-icon:after {
+      display: none;
+    }
+  </style>
 
 </head>
 
 <body>
-    
-<div class="wrapper">
-<header class="mainHeader" id="home">
-    <div class="heroBanner">
-       
-      <div class="animationtest">I am a
-        <span
-           class="txt-rotate"
-           data-period="2000"
-           data-rotate='[ "developer.", "designer.", "layout artist." ]'></span>
-      </div>
 
+  <div class="wrapper">
+    <header class="mainHeader" id="home">
 
-       
- 
+      <div class="heroBanner">
+
+        <div class="animationtest">I am a
+          <span class="txt-rotate" data-period="2000" data-rotate='
+            [ "developer.", "designer.", "layout artist." ]'>
+          </span>
+        </div>
+
         <h2>Hi, I Am Anton Marais</h2>
-        <div class="Plight">Hi, I’m Anton a passionate developer with a wide variety of skills. Graphic Design, Web Designer and Layout Designer </div>
+
+        <div class="Plight">
+          Hi, I’m Anton a passionate developer with a wide variety of skills. Graphic Design, Web
+          Designer and Layout Designer
+        </div>
 
         <a href="#contact"><button class="buttonHire">Hire Me</button></a>
 
-    </div>
+      </div>
 
-    <!--Menu-->
- 
-<div class="menuNew">
+      <!--Menu-->
+
+      <div class="menuNew">
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top bg-light">
-          
-            <a class="navbar-brand" href="#"><img src="./img/studioLogo.png" width="125" height="30"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#services">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#aboutMe">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#feedback">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact Me</a>
-                </li>
 
-              </ul>
-
-              <ul class="navbar-nav mx-auto sm-icons mr-0 ">
-                <li class="nav-item sociallinks"><a class="nav-link" href="https://www.facebook.com/studio81portfolio/"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="nav-item sociallinks"><a class="nav-link" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-                <li class="nav-item sociallinks"><a class="nav-link" href="https://www.linkedin.com/in/anton-marais-3b06a1128/"><i class="fa-brands fa-linkedin-in"></i></a></li>
-
+          <a class="navbar-brand" href="#"><img src="./img/studioLogo.png" width="125" height="30"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutMe">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#feedback">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+              </li>
             </ul>
 
-            </div>
-          </nav>
-
-        </div>
-</header>
-
-<!---
-
-<div class="serviceCards" id="services">
-  <div class="serviceCard slayout">
-    <h3 class="headingService">Layout Artist</h3>
-    <p>As a layout artist you are in charge of the visual presentation of the project. Your job is to assemble photographs, charts, or other graphics and combine these elements with text. The goal is to create a visually interesting spread that will attract an audience.</p>
-  </div>
-  <div class="serviceCard sgraphics">
-    <h3 class="headingService">Graphic Designer</h3>
-    <p>I am proficient in the whole Adobe suite. I started out graphic design as a hobby in photoshop where i designed virtual rides. From there it become a bit of a obsession to see if i can get better.</p>
+            <ul class="navbar-nav mx-auto sm-icons mr-0 ">
+              <li class="nav-item sociallinks"><a class="nav-link" href="https://www.facebook.com/studio81portfolio/"><i
+                    class="fab fa-facebook-f"></i></a></li>
+              <li class="nav-item sociallinks"><a class="nav-link" href="https://www.instagram.com/"><i
+                    class="fab fa-instagram"></i></a></li>
+              <li class="nav-item sociallinks"><a class="nav-link"
+                  href="https://www.linkedin.com/in/anton-marais-3b06a1128/"><i
+                    class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
           </div>
-  <div class="serviceCard swebd">
-    <h3 class="headingService">Web Developer</h3>
-    <p>Studying Full Stack Development with codespace. I have knowledge of ecommerce sites with Magento and i also have extensive knowledge of Wordpress sites and blogs. Further knowledge will be Python and some SEO.</p>
-  </div>
+        </nav>
+      </div>
+    </header>
 
-</div>
+    <!-- <div class="serviceCards" id="services">
+      <div class="serviceCard slayout">
+        <h3 class="headingService">Layout Artist</h3>
+        <p>As a layout artist you are in charge of the visual presentation of the project. Your job is to assemble
+          photographs, charts, or other graphics and combine these elements with text. The goal is to create a visually
+          interesting spread that will attract an audience.</p>
+      </div>
+      <div class="serviceCard sgraphics">
+        <h3 class="headingService">Graphic Designer</h3>
+        <p>I am proficient in the whole Adobe suite. I started out graphic design as a hobby in photoshop where i
+          designed virtual rides. From there it become a bit of a obsession to see if i can get better.</p>
+      </div>
+      <div class="serviceCard swebd">
+        <h3 class="headingService">Web Developer</h3>
+        <p>Studying Full Stack Development with codespace. I have knowledge of ecommerce sites with Magento and i also
+          have extensive knowledge of Wordpress sites and blogs. Further knowledge will be Python and some SEO.</p>
+      </div>
+    </div> -->
 
--->
+    <div class="serviceContainer" id="services">
+      <div class="serviceBox layoutB">
+        <h3 class="headingService">Layout Artist</h3>
+        <p>
+          As a layout artist you are in charge of the visual presentation of the project. Your job is to assemble
+          photographs, charts, or other graphics and combine these elements with text. The goal is to create a visually
+          interesting spread that will attract an audience.
+        </p>
+      </div>
 
+      <div class="serviceBox graphicsB">
+        <h3 class="headingService">Graphic Designer</h3>
+        <p>
+          I am proficient in the whole Adobe suite. I started out graphic design as a hobby in photoshop where i
+          designed virtual rides. From there it become a bit of a obsession to see if i can get better.
+        </p>
+      </div>
 
-
-<div class="serviceContainer" id="services">
-
-<div class="serviceBox layoutB">
-
-  <h3 class="headingService">Layout Artist</h3>
-    <p>As a layout artist you are in charge of the visual presentation of the project. Your job is to assemble photographs, charts, or other graphics and combine these elements with text. The goal is to create a visually interesting spread that will attract an audience.</p>
-
-</div>
-<div class="serviceBox graphicsB">
-
-  <h3 class="headingService">Graphic Designer</h3>
-  <p>I am proficient in the whole Adobe suite. I started out graphic design as a hobby in photoshop where i designed virtual rides. From there it become a bit of a obsession to see if i can get better.</p>
-
-</div>
-<div class="serviceBox webB">
-
-  <h3 class="headingService">Web Developer</h3>
-  <p>Studying Full Stack Development with codespace. I have knowledge of ecommerce sites with Magento and i also have extensive knowledge of Wordpress sites and blogs. Further knowledge will be Python and some SEO.</p>
-
-</div>
-
-</div>
-
-<div class="cards" id="aboutMe">
-  <img src="./img/aboutMeCell.jpg" class="myPhoto">
-  <div class="subAbout">
-    <h3 class="headingService">About Me</h3>
-    
-<p>I worked for a Car magazine designing covers, features, layouts, and adverts for different products. I also worked for a medical company designing all their products packaging, labels,
-printable banners, and adverts. I Specialize in graphic design with Adobe Photoshop, Illustrator, Corel Draw, and Indesign. For the car magazine, I retouched most of the car photos in photoshop and handled the layout in InDesign.
-Corel and illustrator is my go-to program for packaging design and I also use them to make stickers and car wraps.</p>
-
-<p>My other passion was designing website on teh sides with wordpress</p> 
-  
-<a href="./docs/CV.pdf" download="resume">
-    <button class="buttonService"><i class="fa-sharp fa-solid fa-download"></i> Download Resume </button></a>
-  </div>
-
-</div>
-
-<section id="portfolio">
-
-    <h3 class="headingService"> Latest Portfolio</h3>
-    <p class="Pbold">Some of my work to my clients ranging from business cards, brochure & banners.</p>
-
-
-   <!--
-          <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')">All Projects</button>
-            <button class="btn" onclick="filterSelection('vector')"> Adobe Illustrator/ Corel Draw</button>
-            <button class="btn" onclick="filterSelection('photo')"> Adobe Photoshop</button>
-            <button class="btn" onclick="filterSelection('indesign')"> Adobe Indesign</button>
-            <button class="btn" onclick="filterSelection('develop')"> Web Development</button>
-          </div>
--->
-          <!-- start-->
-
-    <!-- Gallery -->
-<div class="row">
-    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 filterDiv all indesign">
-      <img
-        src="./img/portfolio/Apexc.jpg"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="apex business cards"
-      />
-  
-      <img
-        src="./img/portfolio/photot1.jpg "
-        class="w-100 shadow-1-strong rounded mb-4 filterDiv all photo"
-        alt="tshirt mockup1"
-      />
-    </div>
-  
-    <div class="col-lg-4 mb-4 mb-lg-0 filterDiv all vector">
-      <img
-        src="./img/portfolio/romainiaemb.jpg"
-        class="w-100 shadow-1-strong rounded mb-4 filterDiv all"
-        alt="banner embassy"
-      />
-  
-      <img
-        src="./img/portfolio/cleanerB.jpg"
-        class="w-100 shadow-1-strong rounded mb-4 filterDiv all indesign"
-        alt="cleaning brochure"
-      />
-    </div>
-
-    <div class="col-lg-4 mb-4 mb-lg-0 filterDiv all">
-      <img
-        src="./img/portfolio/photot2.jpg"
-        class="w-100 shadow-1-strong rounded mb-4 filterDiv all photo"
-        alt="tshirt mockup 2"
-      />
-  
-      <img
-        src="./img/portfolio/deleviryB.jpg"
-        class="w-100 shadow-1-strong rounded mb-4 filterDiv all indesign"
-        alt="delivery business brochure"
-      />
-    </div>
-
-    <div class="col-lg-4 mb-4 mb-lg-0 filterDiv all vector">
-      <img
-        src="./img/portfolio/diamondB.jpg"
-        class="w-100 shadow-1-strong rounded mb-4 filterDiv all"
-        alt="diamond detailing logo"
-      />
-  
-      <img
-        src="./img/portfolio/empowerB.jpg"
-        class="w-100 shadow-1-strong rounded mb-4 filterDiv all indesign"
-        alt="empowerment brochure"
-      />
-    </div>
-
-    <div class="col-lg-4 mb-4 mb-lg-0 filterDiv all">
-      <img
-        src="./img/portfolio/Full Moon B.jpg"
-        class="w-100 shadow-1-strong rounded mb-4 filterDiv all indesign"
-        alt="fullmoon bees"
-      />
-  
-      <img
-        src="./img/portfolio/Pepsi cola.jpg"
-        class="w-100 shadow-1-strong rounded mb-4 filterDiv all vector"
-        alt="pepsi vector"
-      />
-    </div>
-
-    <div class="col-lg-4 mb-4 mb-lg-0 filterDiv all">
-      <img
-        src="./img/portfolio/diamond.jpg"
-        class="w-100 shadow-1-strong rounded mb-4 filterDiv all indesign"
-        alt="diamond detailing brochure"
-      />
- 
+      <div class="serviceBox webB">
+        <h3 class="headingService">Web Developer</h3>
+        <p>
+          Studying Full Stack Development with codespace. I have knowledge of ecommerce sites with Magento and i also
+          have extensive knowledge of Wordpress sites and blogs. Further knowledge will be Python and some SEO.
+        </p>
+      </div>
 
     </div>
 
+    <div class="cards" id="aboutMe">
+      <img src="./img/aboutMeCell.jpg" class="myPhoto" />
+      <div class="subAbout">
+        <h3 class="headingService">About Me</h3>
 
-  
+        <p>
+          I worked for a Car magazine designing covers, features, layouts, and adverts for different products. I also
+          worked for a medical company designing all their products packaging, labels,
+          printable banners, and adverts. I Specialize in graphic design with Adobe Photoshop, Illustrator, Corel Draw,
+          and Indesign. For the car magazine, I retouched most of the car photos in photoshop and handled the layout in
+          InDesign.
+          Corel and illustrator is my go-to program for packaging design and I also use them to make stickers and car
+          wraps.
+        </p>
 
-  </div>
-  <!-- Gallery -->
+        <p>My other passion was designing website on teh sides with wordpress</p>
 
-        
-           
+        <a href="./docs/CV.pdf" download="resume">
+          <button class="buttonService"><i class="fa-sharp fa-solid fa-download"></i> Download Resume </button></a>
+      </div>
 
+    </div>
 
-        </div>
+    <section id="portfolio">
+
+      <h3 class="headingService"> Latest Portfolio</h3>
+      <p class="Pbold">Some of my work to my clients ranging from business cards, brochure & banners.</p>
+
+      <!-- <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">All Projects</button>
+        <button class="btn" onclick="filterSelection('vector')"> Adobe Illustrator/ Corel Draw</button>
+        <button class="btn" onclick="filterSelection('photo')"> Adobe Photoshop</button>
+        <button class="btn" onclick="filterSelection('indesign')"> Adobe Indesign</button>
+        <button class="btn" onclick="filterSelection('develop')"> Web Development</button>
+      </div> -->
+
+      <!-- Gallery start -->
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 filterDiv all indesign">
+          <img src="./img/portfolio/Apexc.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="apex business cards" />
+
+          <img src="./img/portfolio/photot1.jpg " class="w-100 shadow-1-strong rounded mb-4 filterDiv all photo"
+            alt="tshirt mockup1" />
         </div>
 
-</section>
+        <div class="col-lg-4 mb-4 mb-lg-0 filterDiv all vector">
+          <img src="./img/portfolio/romainiaemb.jpg" class="w-100 shadow-1-strong rounded mb-4 filterDiv all"
+            alt="banner embassy" />
 
+          <img src="./img/portfolio/cleanerB.jpg" class="w-100 shadow-1-strong rounded mb-4 filterDiv all indesign"
+            alt="cleaning brochure" />
+        </div>
 
+        <div class="col-lg-4 mb-4 mb-lg-0 filterDiv all">
+          <img src="./img/portfolio/photot2.jpg" class="w-100 shadow-1-strong rounded mb-4 filterDiv all photo"
+            alt="tshirt mockup 2" />
 
-<section id="skills">
-  <div class="skillMain">
-    <h3 class="headingService">Skills</h3>
-    <p class="Pboldnc">I have a wide skill set. To help make your project great.</p>
+          <img src="./img/portfolio/deleviryB.jpg" class="w-100 shadow-1-strong rounded mb-4 filterDiv all indesign"
+            alt="delivery business brochure" />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0 filterDiv all vector">
+          <img src="./img/portfolio/diamondB.jpg" class="w-100 shadow-1-strong rounded mb-4 filterDiv all"
+            alt="diamond detailing logo" />
+
+          <img src="./img/portfolio/empowerB.jpg" class="w-100 shadow-1-strong rounded mb-4 filterDiv all indesign"
+            alt="empowerment brochure" />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0 filterDiv all">
+          <img src="./img/portfolio/Full Moon B.jpg" class="w-100 shadow-1-strong rounded mb-4 filterDiv all indesign"
+            alt="fullmoon bees" />
+
+          <img src="./img/portfolio/Pepsi cola.jpg" class="w-100 shadow-1-strong rounded mb-4 filterDiv all vector"
+            alt="pepsi vector" />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0 filterDiv all">
+          <img src="./img/portfolio/diamond.jpg" class="w-100 shadow-1-strong rounded mb-4 filterDiv all indesign"
+            alt="diamond detailing brochure" />
+        </div>
+
+      </div>
+      <!-- Gallery end -->
+    </section>
   </div>
+
+  <section id="skills">
+    <div class="skillMain">
+      <h3 class="headingService">Skills</h3>
+      <p class="Pboldnc">I have a wide skill set. To help make your project great.</p>
+    </div>
 
     <div class="skillCards">
-      
+
       <div class="skillcard web">
         <div class="barWeb">Web Design Skill </div>
-
         <div class="webMeter">
-            <span style="width:60%;"><span class="webProgress"></span></span>
+          <span style="width:60%;"><span class="webProgress"></span></span>
         </div>
-
       </div>
+
       <div class="skillcard html">
         <div class="barHTML">HTML</div>
-
-    <div class="htmlMeter">
-        <span style="width:60%;"><span class="htmlProgress"></span></span>
-    </div>
+        <div class="htmlMeter">
+          <span style="width:60%;"><span class="htmlProgress"></span></span>
+        </div>
       </div>
+
       <div class="skillcard design">
         <div class="barCSS">CSS</div>
-
         <div class="designMeter">
-            <span style="width:30%;"><span class="designProgress"></span></span>
+          <span style="width:30%;"><span class="designProgress"></span></span>
         </div>
       </div>
+
       <div class="skillcard java">
         <div class="barJavas">Javascripting</div>
-
-    <div class="javaMeter">
-        <span style="width:10%;"><span class="javaProgress"></span></span>
-    </div>    
-      </div>
-      <div class="skillcard ai">
-        <div class="barIllu">Adobe Illustrator</div>
-
-        <div class="aiMeter">
-            <span style="width:75%;"><span class="aiProgress"></span></span>
-        </div>    
-      </div>
-      <div class="skillcard ps">
-        <div class="barPhotos">Adobe Photoshop</div>
-
-        <div class="psMeter">
-            <span style="width:80%;"><span class="psProgress"></span></span>
-        </div>    
-      </div>
-      <div class="skillcard id">
-        <div class="barIndes">Adobe Indesign</div>
-
-        <div class="idMeter">
-            <span style="width:70%;"><span class="idProgress"></span></span>
+        <div class="javaMeter">
+          <span style="width:10%;"><span class="javaProgress"></span></span>
         </div>
       </div>
+
+      <div class="skillcard ai">
+        <div class="barIllu">Adobe Illustrator</div>
+        <div class="aiMeter">
+          <span style="width:75%;"><span class="aiProgress"></span></span>
+        </div>
+      </div>
+
+      <div class="skillcard ps">
+        <div class="barPhotos">Adobe Photoshop</div>
+        <div class="psMeter">
+          <span style="width:80%;"><span class="psProgress"></span></span>
+        </div>
+      </div>
+
+      <div class="skillcard id">
+        <div class="barIndes">Adobe Indesign</div>
+        <div class="idMeter">
+          <span style="width:70%;"><span class="idProgress"></span></span>
+        </div>
+      </div>
+
       <div class="skillcard corel">
         <div class="barCorel">Corel Draw</div>
-
         <div class="corelMeter">
-            <span style="width:65%;"><span class="corelProgress"></span></span>
-        </div>        
+          <span style="width:65%;"><span class="corelProgress"></span></span>
+        </div>
       </div>
 
       <div class="skillcard skillImage">
         <img src="./img/diamondb.jpg" class="skillphoto">
-    </div>        
-  </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <div class="experCards">
+    <div class="experCard experMain">
+
+      <h3 class="Main_heading">Years of Experiences in Design & Development.</h3>
+      <p>integer pulvinar erat vitae nulla mollis tempor. Donec blandit nisl imperdiet, tristique sapien ut.</p>
+      <p>Cras diam nulla, rutrum a porttitor a, ornare ut dui. Aliquam eu erat vel dolor gravida rutrum. Nam nec
+        vehicula neque. Fusce molestie non mauris vitae tincidunt. Quisque accumsan nibh tempus tortor accumsan.</p>
 
     </div>
-  </div>
-    </section>
-    
-<!--
-    <div class="experCards">
-      <div class="experCard experMain">
-
-        <h3 class="Main_heading">Years of Experiences in Design & Development.</h3>
-        <p >integer pulvinar erat vitae nulla mollis tempor. Donec blandit nisl imperdiet, tristique sapien ut.</p>
-        <p>Cras diam nulla, rutrum a porttitor a, ornare ut dui. Aliquam eu erat vel dolor gravida rutrum. Nam nec vehicula neque. Fusce molestie non mauris vitae tincidunt. Quisque accumsan nibh tempus tortor accumsan.</p>
-
-      </div>
-      <div class="expercard experCell">
-
-        <div class="cellWrapper">
-          <div class="cellIcon"></div>
-          
-
-          <div class="cell">+27 82 123 4567</div>
-              </div>
-      </div>
-
-
-
-      <div class="expercard experMail">
-
-        <div class="mailWrapper">
-          <div class="mailIcon"></div>
-          <div class="email">info@studio81.info</div>
-        </div>
-
-      </div>
-      <div class="expercard experImage">
-          <img src="./img/shoeVector.jpg"/>
-      </div> 
-
-      </div>
-
-    </div>
-
-   --> 
-   
-   <div class="skillContainer">
-    <div class="skillbox skillbHeading">
-
-      <h3 class="skillHeading">Years of Experiences in Design & Development.</h3>
-
-    </div>
-
-    <div class="skillbox skillbParagraph">
-
-      <p >My knowledge of design and layouts come a far way. Design as a whole has always been a passion of mine. Wheter it is web or graphics. I have fulll knowlesge of Adobe suite. My knowledge for web design and coding is also growing as I am studying for a full stack developer at Codespace.</p>
-
-    </div>
-    <div class="skillbox skillbCell">
+    <div class="expercard experCell">
 
       <div class="cellWrapper">
         <div class="cellIcon"></div>
-        
-
         <div class="cell">+27 82 123 4567</div>
-            </div>
-
+      </div>
     </div>
-    <div class="skillbox skillbMail">
+    <div class="expercard experMail">
 
       <div class="mailWrapper">
         <div class="mailIcon"></div>
@@ -418,354 +340,304 @@ Corel and illustrator is my go-to program for packaging design and I also use th
       </div>
 
     </div>
-    <div class="skillbox skillbImage">
-
-      <img src="./img/shoeVector.jpg"/>
-
-    </div> 
-
+    <div class="expercard experImage">
+      <img src="./img/shoeVector.jpg" />
     </div>
-   </div>
- 
-<section class="feedback" id="feedback"> 
+
+  </div> -->
+
+  <section class="skillContainer">
+
+    <div class="skillbox skillbHeading">
+      <h3 class="skillHeading">Years of Experiences in Design & Development.</h3>
+    </div>
+
+    <div class="skillbox skillbParagraph">
+      <p>
+        My knowledge of design and layouts come a far way. Design as a whole has always been a passion of mine. Wheter
+        it is web or graphics. I have fulll knowlesge of Adobe suite. My knowledge for web design and coding is also
+        growing as I am studying for a full stack developer at Codespace.
+      </p>
+    </div>
+
+    <div class="skillbox skillbCell">
+      <div class="cellWrapper">
+        <div class="cellIcon"></div>
+        <div class="cell">+27 82 123 4567</div>
+      </div>
+    </div>
+
+    <div class="skillbox skillbMail">
+      <div class="mailWrapper">
+        <div class="mailIcon"></div>
+        <div class="email">info@studio81.info</div>
+      </div>
+    </div>
+
+    <div class="skillbox skillbImage">
+      <img src="./img/shoeVector.jpg" />
+    </div>
+
+  </section>
+
+  <section class="feedback" id="feedback">
     <h3 class="headingService">My Client Feedback</h3>
-    <p class="Pboldnc">My design skills is my core business! The proof is in what my clients have to say.</p>
+
+    <p class="Pboldnc">
+      My design skills is my core business! The proof is in what my clients have to say.
+    </p>
+
     <!--Feedback Carousel-->
     <!-- Carousel wrapper -->
-<div id="carouselExampleControls" class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="rounded-circle shadow-1-strong mb-4"
-          src="./img/fiverr.png" alt="avatar"
-          style="width: 150px;" />
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-8">
-            <h5 class="mb-3">Vidhyaab Reddy</h5>
-            <p>Videographer</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              Anton is very good with design and asked all the right questions at the onset of the project itself giving everyone more clarity. He was also extremely patient and took time to teach me how to edit the document. He followed up well and delivered in a very timely fashion. Would def recommend him to others. 
-            </p>
+    <div id="carouselExampleControls" class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="rounded-circle shadow-1-strong mb-4" src="./img/fiverr.png" alt="avatar" style="width: 150px;" />
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <h5 class="mb-3">Vidhyaab Reddy</h5>
+              <p>Videographer</p>
+              <p class="text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+                Anton is very good with design and asked all the right questions at the onset of the project itself
+                giving everyone more clarity. He was also extremely patient and took time to teach me how to edit the
+                document. He followed up well and delivered in a very timely fashion. Would def recommend him to others.
+              </p>
+            </div>
           </div>
+          <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+            <li><i class="fas fa-star fa-sm"></i></li>
+            <li><i class="fas fa-star fa-sm"></i></li>
+            <li><i class="fas fa-star fa-sm"></i></li>
+            <li><i class="fas fa-star fa-sm"></i></li>
+            <li><i class="far fa-star fa-sm"></i></li>
+          </ul>
         </div>
-        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-          <li><i class="fas fa-star fa-sm"></i></li>
-          <li><i class="fas fa-star fa-sm"></i></li>
-          <li><i class="fas fa-star fa-sm"></i></li>
-          <li><i class="fas fa-star fa-sm"></i></li>
-          <li><i class="far fa-star fa-sm"></i></li>
-        </ul>
-      </div>
-      <div class="carousel-item">
-        <img class="rounded-circle shadow-1-strong mb-4"
-          src="./img/fiverr.png" alt="avatar"
-          style="width: 150px;" />
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-8">
-            <h5 class="mb-3">Romanian Goverment</h5>
-            <p>Media Advisor</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              Amazing work on our needs, with clear understanding of goals and a proactive attitude towards problem solving. Anton has worked up a quality deliverable within a few days, and will be looking forward to future projects. Will definately recommend for any project, as an excellent communicator and highly skilled & creative illustration work.
-            </p>
+        <div class="carousel-item">
+          <img class="rounded-circle shadow-1-strong mb-4" src="./img/fiverr.png" alt="avatar" style="width: 150px;" />
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <h5 class="mb-3">Romanian Goverment</h5>
+              <p>Media Advisor</p>
+              <p class="text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+                Amazing work on our needs, with clear understanding of goals and a proactive attitude towards problem
+                solving. Anton has worked up a quality deliverable within a few days, and will be looking forward to
+                future projects. Will definately recommend for any project, as an excellent communicator and highly
+                skilled & creative illustration work.
+              </p>
+            </div>
           </div>
+          <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+            <li><i class="fas fa-star fa-sm"></i></li>
+            <li><i class="fas fa-star fa-sm"></i></li>
+            <li><i class="fas fa-star fa-sm"></i></li>
+            <li><i class="fas fa-star fa-sm"></i></li>
+            <li><i class="far fa-star fa-sm"></i></li>
+          </ul>
         </div>
-        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-          <li><i class="fas fa-star fa-sm"></i></li>
-          <li><i class="fas fa-star fa-sm"></i></li>
-          <li><i class="fas fa-star fa-sm"></i></li>
-          <li><i class="fas fa-star fa-sm"></i></li>
-          <li><i class="far fa-star fa-sm"></i></li>
-        </ul>
-      </div>
-      <div class="carousel-item">
-        <img class="rounded-circle shadow-1-strong mb-4"
-          src="./img/fiverr.png" alt="avatar" style="width: 150px;" />
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-8">
-            <h5 class="mb-3">Robin Knighton</h5>
-            <p>Signage Company</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              Anton was very professional and friendly to deal with. He understood what the concept was and listened to all my requests but also used his experience and creativity to help create an amazing logo for me. I would highly recommend him and I look forward to working with Anton again.
-            </p>
+        <div class="carousel-item">
+          <img class="rounded-circle shadow-1-strong mb-4" src="./img/fiverr.png" alt="avatar" style="width: 150px;" />
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <h5 class="mb-3">Robin Knighton</h5>
+              <p>Signage Company</p>
+              <p class="text-muted">
+                <i class="fas fa-quote-left pe-2"></i>
+                Anton was very professional and friendly to deal with. He understood what the concept was and listened
+                to all my requests but also used his experience and creativity to help create an amazing logo for me. I
+                would highly recommend him and I look forward to working with Anton again.
+              </p>
+            </div>
           </div>
+          <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+            <li><i class="fas fa-star fa-sm"></i></li>
+            <li><i class="fas fa-star fa-sm"></i></li>
+            <li><i class="fas fa-star fa-sm"></i></li>
+            <li><i class="fas fa-star fa-sm"></i></li>
+            <li><i class="far fa-star fa-sm"></i></li>
+          </ul>
         </div>
-        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-          <li><i class="fas fa-star fa-sm"></i></li>
-          <li><i class="fas fa-star fa-sm"></i></li>
-          <li><i class="fas fa-star fa-sm"></i></li>
-          <li><i class="fas fa-star fa-sm"></i></li>
-          <li><i class="far fa-star fa-sm"></i></li>
-        </ul>
       </div>
+      <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls"
+        data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls"
+        data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls"
-      data-mdb-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls"
-      data-mdb-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- Carousel wrapper -->
-    
-</section>
+    <!-- Carousel wrapper -->
+  </section>
 
-<section class="contact">
-   
-  <div class="Formcontainer">
-    <form action="#">
+  <section class="contact">
+    <div class="Formcontainer">
 
-  <div class="contactCards">
+      <!--Contact Form Start-->
+      <form action="#">
+        <div class="contactCards">
 
-    <div class="contactCard fname">
-      <div class="form-challenge">
+          <div class="contactCard fname">
+            <div class="form-challenge">
+              <input type="text" name="userID" placeholder="Name" id="userID" required>
+            </div>
+          </div>
 
+          <div class="contactCard femail">
+            <div class="form-challenge">
+              <input type="email" name="email" placeholder="Email Adress" id="email" required>
+            </div>
+          </div>
 
-        <input type="text" name="userID" placeholder="Name" id="userID" required>
+          <div class="contactCard fsubject">
+            <div class="form-challenge">
+              <input type="text" name="subject" placeholder="Subject" id="subject" required>
+            </div>
+          </div>
 
-    </div>
-    </div>
-    <div class="contactCard femail">
-      <div class="form-challenge">
+          <div class="contactCard fcomment">
+            <div class="form-challenge">
+              <textarea id="comment" name="comment" placeholder="Write something" id="comment" style="height:200px">
+              </textarea>
+            </div>
+          </div>
 
+          <div class="contactCard submit">
+            <div>
+              <input type="submit" class="button" id="formbtn" value="Contact Me">
+            </div>
+          </div>
 
-        <input type="email" name="email" placeholder="Email Adress" id="email" required>
-
-</div> 
-    </div>
-    <div class="contactCard fsubject">
-      <div class="form-challenge">
-
-
-        <input type="text" name="subject" placeholder="Subject" id="subject" required>
-
-    </div>
-    </div>
-    <div class="contactCard fcomment">
-
-      <div class="form-challenge">
-
-
-        <textarea id="comment" name="comment" placeholder="Write something" id="comment" style="height:200px"></textarea>
-
-    </div>   
-    </div>
-
-    <div class="contactCard submit"> 
-      <div>
-        <input type="submit" class="button" id="formbtn" value="SEND MESSAGE">
         </div>
-
-    </div>
-  
-
-        
-    </div>
+      </form>
+      <!--Contact Form End-->
     </div>
 
-  </div>
-
-
-</form>
-  
-  
-  
-  
-  
-  
-  
-  <!--Contact Form-->
-
-
-           
-<br>
-     
     <br>
-    
     <br>
-    
-<br>
-    
+    <br>
+    <br>
 
-    
-</section>
+  </section>
 
-<footer>
+  <footer>
 
-<div class="boxcontain">
+    <div class="boxcontain">
 
-<div class="contentbox logoB">
-  <img src="./img/studioLogo.png" width="200px">
-  <p>Its not just a design! Its all about the small things that make it something GREAT!</p>
-</div>
-<div class="contentbox serviceB" >
-  <div class="footerHeading">What Do You Need?</div>
-        
+      <div class="contentbox logoB">
+        <img src="./img/studioLogo.png" width="200px">
+        <p>
+          Its not just a design! Its all about the small things that make it something GREAT!
+        </p>
+      </div>
+
+      <div class="contentbox serviceB">
+        <div class="footerHeading">What Do You Need?</div>
         <ul class="footerUL">
-            <li class="footerLI">A Graphic Designer</li>
-            <li class="footerLI">A Layout Artist</li>
-            <li class="footerLI">A Web Developer</li>
+          <li class="footerLI">A Graphic Designer</li>
+          <li class="footerLI">A Layout Artist</li>
+          <li class="footerLI">A Web Developer</li>
         </ul>
-   
+      </div>
 
-</div>
-<div class="contentbox contactB" id="contact">
-  <div class="footerHeading">Contact Info</div>
-      
-  <ul class="footerUL">
-    <li class="footerLI">123 Street, Centurion, Pretoria</li>
-    <li class="footerLI">+27 82 123 4567</li>
-    <li class="footerLI">info@studio81.info</li>
+      <div class="contentbox contactB" id="contact">
+        <div class="footerHeading">Contact Info</div>
+        <ul class="footerUL">
+          <li class="footerLI">123 Street, Centurion, Pretoria</li>
+          <li class="footerLI">+27 82 123 4567</li>
+          <li class="footerLI">info@studio81.info</li>
+        </ul>
+      </div>
 
-  </ul>
-</div>
+      <div class="contentbox copyB">
+        <p class="pcopyright"> Studio 81 @ All Rights Reserved 2022</p>
+        <ul class="socialfooterUL">
+          <li class="socialfooterLI">
+            <a class="nav-link" href="https://www.facebook.com/studio81portfolio/">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="socialfooterLI">
+            <a class="nav-link" href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="socialfooterLI">
+            <a class="nav-link" href="https://www.linkedin.com/in/anton-marais-3b06a1128/">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-<div class="contentbox copyB">
-  
-<p class="pcopyright"> Studio 81 @ All Rights Reserved 2022</p>
-<ul class="socialfooterUL">
+    </div>
 
-  <li class="socialfooterLI"><a class="nav-link" href="https://www.facebook.com/studio81portfolio/"><i class="fa-brands fa-facebook-f"></i></a></li>
-  <li class="socialfooterLI"><a class="nav-link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-  <li class="socialfooterLI"><a class="nav-link" href="https://www.linkedin.com/in/anton-marais-3b06a1128/"><i class="fa-brands fa-linkedin-in"></i></a></li>
-
-</ul>
-
-
-  
-</div>
-
-
-
-</div>
-
-
-
-  <!--
-    <div class="footerContainer">
+    <!-- <div class="footerContainer">
       <div class="footerScontain footerlogo">
 
-      <div class="logos"><img src="./img/studio logo.png" width="200px"></div>
-           <p>Proin dictum eget erat eu rutrum. Aenean maximus ipsum sed dignissim tempor. Aliquam quam mauris, varius non elit vitae.</p>
+        <div class="logos"><img src="./img/studio logo.png" width="200px"></div>
+        <p>Proin dictum eget erat eu rutrum. Aenean maximus ipsum sed dignissim tempor. Aliquam quam mauris, varius non
+          elit vitae.</p>
 
       </div>
       <div class="footerScontain footerService">
 
         <div class="footerHeading">What Do You Need?</div>
-        
+
         <ul class="footerUL">
-            <li class="footerLI">A Graphic Designer</li>
-            <li class="footerLI">A Layout Artist</li>
-            <li class="footerLI">A Web Developer</li>
+          <li class="footerLI">A Graphic Designer</li>
+          <li class="footerLI">A Layout Artist</li>
+          <li class="footerLI">A Web Developer</li>
         </ul>
-    
+
         <p>Im all of them you can contact me!</p>
 
       </div>
-      
-      
+
+
       <div class="footerScontain footerContact">
 
-      <div class="footerHeading">Contact Info</div>
-      
-      <ul class="footerUL">
-        <li class="footerLI">123 Street, Centurion, Pretoria</li>
-        <li class="footerLI">+27 82 123 4567</li>
-        <li class="footerLI">info@studio81.info</li>
-    
-      </ul>
+        <div class="footerHeading">Contact Info</div>
+
+        <ul class="footerUL">
+          <li class="footerLI">123 Street, Centurion, Pretoria</li>
+          <li class="footerLI">+27 82 123 4567</li>
+          <li class="footerLI">info@studio81.info</li>
+
+        </ul>
 
       </div>
 
       <div class="footerScontain footercopyRight">
         <p>Studio 81 @ All Rights Reserved 2022</p>
       </div>
-</div>   
-  </div>
--->
+    </div> -->
 
+  </footer>
 
-</footer>
-
-</div>
-
-<!-- Optional JavaScript -->
+  <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  
   <script type="text/javascript" src="js/mdb.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
 
-var TxtRotate = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
 
-TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-  var that = this;
-  var delta = 300 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
-
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
-};
-
-
-
-  </script>
-  
 </body>
+
 </html>
